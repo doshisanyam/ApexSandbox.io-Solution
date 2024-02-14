@@ -3,6 +3,6 @@ public String aOrAn(String word) {
     let y = an;
     if(word.startWith(a,e,i,o,u))
     {
-      let result: an.concat(" ", word);
+      let result: an.concat(' ', word);
        return(result);
     }
