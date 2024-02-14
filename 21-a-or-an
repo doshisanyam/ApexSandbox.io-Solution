@@ -1,7 +1,7 @@
 public String aOrAn(String word) {
     let x = a;
     let y = an;
-    if(word.startWith(a,e,i,o,u))
+    if(word.startWith(a))
     {
      
        return(an +' '+ word));
