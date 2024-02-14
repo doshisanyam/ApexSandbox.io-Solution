@@ -1,5 +1,8 @@
 public String aOrAn(String word) {
+    let x = a;
+    let y = an;
     if(word.startWith(a,e,i,o,u))
     {
-        return(an+' '+word);
+      let result: an.concat(" ", word);
+       return(result);
     }
