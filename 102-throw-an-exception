@@ -1,0 +1,9 @@
+public List<Account> checkAccounts(List<Account> accounts)
+{
+    if (accounts == Null){
+        return ('accounts should not be null');
+    }
+}
+
+//do not remove the following custom-defined exception
+public class AccountException extends Exception {}
