@@ -3,6 +3,14 @@ public List<Account> checkAccounts(List<Account> accounts)
     if (accounts == Null){
         return ('accounts should not be null');
     }
+    for(account ac : accounts){
+        if(ac.BillingCity == Null;){
+            throw new AccountException('Invalid BillingCity')
+        }
+
+
+    }
+    return accounts ;
 }
 
 //do not remove the following custom-defined exception
