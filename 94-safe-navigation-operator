@@ -1,7 +1,7 @@
 public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
  String billingCity ;
  for (account ac : accounts){
- if(billingCity == NULL AND ac.BillingCity == NUll){
+ if(billingCity == NULL AND ac.BillingCity == NULL){
  billingCity = ac.BillingCity;
  billingCity = billingCity.toUpperCase();}
 }
