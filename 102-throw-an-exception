@@ -4,7 +4,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         throw new AccountException ('accounts should not be null');
     }
     for(account ac : accounts){
-        if(ac.BillingCity = Null){
+        if(ac.BillingCity == Null){
             throw new AccountException('Invalid BillingCity');
         }
 
