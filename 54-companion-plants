@@ -1,16 +1,25 @@
 public Boolean companionPlants(String plant1, String plant2) {
-     const companions = [
-        ['lettuce', 'cucumbers'],
-        ['lettuce', 'onions'],
-        ['onions', 'carrots'],
-        ['onions', 'tomatoes']
-    ];
+        if (plant1 === 'onions') {
+        if (plant2 === 'lettuce' || plant2 === 'carrots' || plant2 === 'tomatoes') {
+            return true;
+        }
+    } else if (plant1 === 'lettuce') {
+        if (plant2 === 'cucumbers' || plant2 === 'onions') {
+            return true;
+        }
+    } else if (plant1 === 'cucumbers') {
+        if (plant2 === 'lettuce') {
+            return true;
+        }
+    } else if (plant1 === 'carrots') {
+        if (plant2 === 'onions') {
+            return true;
+        }
+    } else if (plant1 === 'tomatoes') {
+        if (plant2 === 'onions') {
+            return true;
+        }
+    }
 
-    // Check if the pair exists in either order
-    return companions.some(([a, b]) =>
-        (a === plant1 && b === plant2) ||
-        (a === plant2 && b === plant1)
-    );
-}
-
+    return false;
 }
